@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom'
 import './app.css'
 import HomePage from './components/home/home-page'
 import About from './components/about/about-page'
-//import 'bootstrap'
-import bootstrap from 'bootstrap/dist/css/bootstrap.css'
+import Header from './components/common/header'
+import 'bootstrap/dist/css/bootstrap.css'
 
 class App extends React.Component {
   render() {
@@ -21,8 +21,11 @@ class App extends React.Component {
     }
 
     return (
-      <div className={bootstrap.container}>
-        <Child route={route} />
+      <div>
+        <Header />
+        <div className="container">
+          <Child route={route} />
+        </div>
       </div>
     )
   }
