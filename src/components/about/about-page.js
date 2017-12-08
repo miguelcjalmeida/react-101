@@ -1,18 +1,17 @@
 import React from 'react'
-import bootstrap from 'bootstrap/dist/css/bootstrap.css'
 
 class About extends React.Component {
   render() {
     return (
       <div>
         <h1>Technologies</h1>
-        <ul className={bootstrap.listGroup}>
-          <li className={bootstrap.listGroupItem}>React</li>
-          <li className={bootstrap.listGroupItem}>React-Router</li>
-          <li className={bootstrap.listGroupItem}>Flux</li>
-          <li className={bootstrap.listGroupItem}>Rollup</li>
-          <li className={bootstrap.listGroupItem}>NodeJS</li>
-          <li className={bootstrap.listGroupItem}>Npm</li>
+        <ul className="list-group">
+          <li className="list-group-item">React</li>
+          <li className="list-group-item">React-Router</li>
+          <li className="list-group-item">Flux</li>
+          <li className="list-group-item">Rollup</li>
+          <li className="list-group-item">NodeJS</li>
+          <li className="list-group-item">Npm</li>
         </ul>
       </div>
     )

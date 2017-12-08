@@ -40,6 +40,10 @@
     "rollup-plugin-sourcemaps": "^0.4.2"
   },
   "dependencies": {
-    "react": "16.0.0"
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.12.9",
+    "react": "16.0.0",
+    "react-dom": "^16.2.0"
   }
 }

@@ -21,11 +21,9 @@ class App extends React.Component {
     }
 
     return (
-      <div>
+      <div> 
         <Header />
-        <div className="container">
-          <Child route={route} />
-        </div>
+        <Child route={route} />
       </div>
     )
   }
