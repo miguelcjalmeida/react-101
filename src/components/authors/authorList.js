@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class AuthorList extends React.Component {
   render() {
@@ -29,5 +30,8 @@ class AuthorList extends React.Component {
   }
 }
 
-export default AuthorList
+AuthorList.propTypes = {
+  authors: PropTypes.array.isRequired
+}
 
+export default AuthorList

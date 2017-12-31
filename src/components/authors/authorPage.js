@@ -1,8 +1,8 @@
-import React from 'react'
+import {Component} from 'react'
 import AuthorApi from '../../api/authorApi'
 import AuthorList from './authorList'
 
-class Authors extends React.Component {
+class AuthorPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -24,4 +24,4 @@ class Authors extends React.Component {
   }
 }
 
-export default Authors
+export default AuthorPage
