@@ -1,6 +1,6 @@
 import React from 'react'
-import AuthorApi from '../../api/authorApi'
-import AuthorList from './authorList'
+import AuthorApi from '../../api/author-api'
+import AuthorList from './author-list'
 
 class AuthorPage extends React.Component {
   constructor(props) {

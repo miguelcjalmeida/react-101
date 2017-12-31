@@ -1,7 +1,7 @@
 //This file is mocking a web API by hitting hard coded data.
 //var authors = require('./authorData').authors;
 //var _ = require('lodash');
-import authorData from './authorData'
+import authorData from './author-data'
 import _ from 'lodash'
 
 let authors = authorData.authors

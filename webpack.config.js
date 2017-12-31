@@ -7,6 +7,9 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'main.js'
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     loaders: [
       {
