@@ -4,6 +4,7 @@ import './app.css'
 import HomePage from './components/home/home-page'
 import About from './components/about/about-page'
 import Header from './components/common/header'
+import Authors from './components/authors/authorPage'
 import 'bootstrap/dist/css/bootstrap.css'
 
 class App extends React.Component {
@@ -16,12 +17,16 @@ class App extends React.Component {
         Child = About
         break
 
+      case "authors":
+        Child = Authors
+        break
+
       default:
         Child = HomePage
     }
 
     return (
-      <div> 
+      <div>
         <Header />
         <Child route={route} />
       </div>

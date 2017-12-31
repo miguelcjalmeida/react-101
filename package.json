@@ -42,6 +42,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "jquery": "^1.9.1",
+    "lodash": "^4.17.4",
     "popper.js": "^1.12.9",
     "react": "16.0.0",
     "react-dom": "^16.2.0"
