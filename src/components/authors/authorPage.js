@@ -1,8 +1,8 @@
-import {Component} from 'react'
+import React from 'react'
 import AuthorApi from '../../api/authorApi'
 import AuthorList from './authorList'
 
-class AuthorPage extends Component {
+class AuthorPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
