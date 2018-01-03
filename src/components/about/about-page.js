@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class About extends React.Component {
   render() {
@@ -28,6 +29,10 @@ class About extends React.Component {
   navigateBackward(){
     this.props.history.goBack()
   }
+}
+
+About.propTypes = {
+  history: PropTypes.object.isRequired
 }
 
 export default About
