@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   entry: './src/main.js',
@@ -22,5 +23,19 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      Popper: 'popper.js'
+    })
+  ],
+  resolve: {
+    extensions: ['.js', '.css'],
+    alias: {
+      'bootstrap.css': 'bootstrap/dist/css/bootstrap.css',
+      'toastr.css': 'toastr/build/toastr.css'
+    }
+  },
 }

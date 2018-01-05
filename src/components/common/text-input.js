@@ -6,13 +6,20 @@ class TextInput extends React.Component {
     const hasError = this.props.error && this.props.error.length > 0
     return hasError ? "has-danger" : "has-success" //"has-warning"
   }
+
+  componentDidMount() {
+    if(this.props.focusOnLoad)
+      this.textInput.focus()
+  }
+
   render() {
     return (
       <div className={`form-group ${this.validationClass()}`}>
         <label htmlFor={this.props.name}>
           {this.props.label}
         </label>
-        <input type="text"
+        <input 
+          type="text"
           name={this.props.name}
           className="form-control"
           placeholder={this.props.placeholder}
@@ -33,6 +40,7 @@ TextInput.propTypes = {
   placeholder: PropTypes.string,
   value: PropTypes.string,
   error: PropTypes.string,
+  focusOnLoad: PropTypes.bool,
   onChange: PropTypes.func.isRequired
 }
 
